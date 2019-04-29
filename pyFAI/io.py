@@ -66,7 +66,7 @@ except ImportError:
 
 from .utils import StringTypes, fully_qualified_name
 from . import units
-from . import version
+# from . import version
 
 
 logger = logging.getLogger(__name__)

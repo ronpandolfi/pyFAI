@@ -45,11 +45,11 @@ import threading
 sem = threading.Semaphore()  # global lock for image processing initialization
 import fabio
 
-from .._version import calc_hexversion
-if ("hexversion" in dir(fabio)) and (fabio.hexversion >= calc_hexversion(0, 2, 2)):
-    from fabio.nexus import exists
-else:
-    from os.path import exists
+# from .._version import calc_hexversion
+# if ("hexversion" in dir(fabio)) and (fabio.hexversion >= calc_hexversion(0, 2, 2)):
+#     from fabio.nexus import exists
+# else:
+from os.path import exists
 
 logger = logging.getLogger(__name__)
 

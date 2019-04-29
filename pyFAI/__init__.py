@@ -41,12 +41,12 @@ if "ps1" in dir(sys):
 
 import os
 project = os.path.basename(os.path.dirname(os.path.abspath(__file__)))
-try:
-    from ._version import __date__ as date
-    from ._version import version, version_info, hexversion, strictversion
-    from ._version import citation, calc_hexversion
-except ImportError:
-    raise RuntimeError("Do NOT use %s from its sources: build it and use the built version" % project)
+# try:
+#     from ._version import __date__ as date
+#     from ._version import version, version_info, hexversion, strictversion
+#     from ._version import citation, calc_hexversion
+# except ImportError:
+#     raise RuntimeError("Do NOT use %s from its sources: build it and use the built version" % project)
 
 if sys.version_info < (2, 6):
     logger = logging.getLogger(__name__)

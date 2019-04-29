@@ -50,10 +50,10 @@ from scipy.optimize.optimize import fminbound
 from .third_party import six
 from .utils import stringutil
 
-from ._version import calc_hexversion
-if ("hexversion" not in dir(fabio)) or (fabio.hexversion < calc_hexversion(0, 4, 0, "dev", 5)):
-    # Short cut fabio.factory do not exists on older versions
-    fabio.factory = fabio.fabioimage.FabioImage.factory
+# from ._version import calc_hexversion
+# if ("hexversion" not in dir(fabio)) or (fabio.hexversion < calc_hexversion(0, 4, 0, "dev", 5)):
+#     # Short cut fabio.factory do not exists on older versions
+#     fabio.factory = fabio.fabioimage.FabioImage.factory
 
 logger = logging.getLogger(__name__)
 
